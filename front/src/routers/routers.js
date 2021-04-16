@@ -1,5 +1,5 @@
 import Login from "../views/Login";
-import router from "./index";
+import Dashboard from "../views/Dashboard";
 
 const routes = [
     {
@@ -18,7 +18,7 @@ const routes = [
                 path: '/category-list',
                 name: 'category-list',
                 title: "图片分类",
-                component: CategoryList
+                component: () => import('../views/ImageList')
             },
             {
                 path: '/image-list',

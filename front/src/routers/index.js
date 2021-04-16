@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Store from '@/store';
 import UserObject from "../util/user";
+import routes from './routers.js';
 
 Vue.use(ViewUI);
 Vue.use(VueRouter)
@@ -42,7 +43,6 @@ router.beforeEach((to, from, next) => {
             name: LOGIN_PAGE_NAME // 跳转到登录页
         })
     }
-
     if (token && to.name === LOGIN_PAGE_NAME) {
         // 已登录且要跳转的页面是登录页
         next({

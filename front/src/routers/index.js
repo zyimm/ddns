@@ -4,7 +4,6 @@ import Store from '@/store';
 import UserObject from "../util/user";
 import routes from './routers.js';
 
-Vue.use(ViewUI);
 Vue.use(VueRouter)
 
 const LOGIN_PAGE_NAME = 'login';

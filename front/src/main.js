@@ -1,6 +1,5 @@
 import Vue from 'vue';
-import Router from 'vue-router';
-import routes from './routers';
+import router from '@/routers';
 import config from '@/config';
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';

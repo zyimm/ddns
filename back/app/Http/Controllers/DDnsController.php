@@ -9,4 +9,8 @@ class DDnsController extends Controller
     public function index()
     {
     }
+    
+    public function login()
+    {
+    }
 }
